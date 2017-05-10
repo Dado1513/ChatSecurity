@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/settingImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/colorPrimary"
+        android:layout_marginStart="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="CAMBIA IMMAGINE"
+        android:id="@+id/changeImage"
+        android:background="@drawable/shape_button"
+        android:layout_below="@+id/changeState"
+        android:layout_alignStart="@+id/changeState"
+        android:layout_marginTop="29dp"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="CAMBIA STATO"
+        android:background="@drawable/shape_button"
+        android:id="@+id/changeState"
+        android:layout_marginEnd="26dp"
+        android:layout_above="@+id/settingImage"
+        android:layout_alignParentEnd="true"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="CAMBIA PASSWORD"
+        android:background="@drawable/shape_button"
+        android:id="@+id/changePassword"
+        android:layout_below="@+id/changeImage"
+        android:layout_alignStart="@+id/changeImage"
+        android:layout_marginTop="30dp"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="IMPOSTA IMMAGINE BACKGROUND"
+        android:background="@drawable/shape_button"
+        android:id="@+id/changeBackgorund"
+        android:layout_below="@+id/changePassword"
+        android:layout_alignStart="@+id/changePassword"
+        android:layout_marginTop="29dp"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="@color/darkgrey"
+        android:id="@+id/statePersonal"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/changeBackgorund"
+        android:layout_alignStart="@+id/settingImage"
+        android:layout_alignEnd="@+id/settingImage"
+        android:gravity="center"/>
+
+</RelativeLayout>

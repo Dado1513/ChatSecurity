@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="SCEGLI UNA IMMAGINE DEL PROFILO"
+        android:textSize="35dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgView"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="380dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button"
+        android:text="CARICA IMMAGINE"
+        android:textStyle="bold"
+
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/imgView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendDataToServer"
+        android:background="@drawable/ic_done_all_black_24dp"
+        android:layout_below="@+id/loadImage"
+        android:layout_alignEnd="@+id/loadImage"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/retry"
+        android:background="@drawable/ic_navigate_before_black_24dp"
+        android:layout_alignTop="@+id/sendDataToServer"
+        android:layout_alignStart="@+id/loadImage" />
+
+
+</RelativeLayout>

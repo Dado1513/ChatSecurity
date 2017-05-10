@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_weight="50.79"
+        android:focusable="true"
+
+        android:queryHint="search"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_viewSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/search"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
+

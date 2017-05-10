@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/cerca"
+        android:title="Cerca"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"></item>
+
+
+    <item
+        android:id="@+id/changeLocationOff"
+        android:title="Localizzazione Attiva"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_location_off_white_24dp"
+        />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/actionLogout"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        />
+    <item
+        android:id="@+id/changeKey"
+        android:title="Sicurezza"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_lock_white_24dp"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Impostazioni"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_settings_white_24dp"
+        />
+
+
+
+</menu>

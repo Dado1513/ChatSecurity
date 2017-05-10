@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/settingImage"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/colorPrimary"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="CAMBIA IMMAGINE"
+        android:id="@+id/changeImage"
+        android:background="@drawable/shape_button"
+        android:layout_below="@+id/changeState"
+        android:layout_alignStart="@+id/settingImage"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="CAMBIA STATO"
+        android:background="@drawable/shape_button"
+        android:id="@+id/changeState"
+        android:layout_marginTop="109dp"
+        android:layout_below="@+id/settingImage"
+        android:layout_alignStart="@+id/changeImage" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="CAMBIA PASSWORD"
+        android:background="@drawable/shape_button"
+        android:id="@+id/changePassword"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/changeImage"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="IMPOSTA IMMAGINE SFONDO"
+        android:background="@drawable/shape_button"
+        android:id="@+id/changeBackground"
+        android:layout_below="@+id/changePassword"
+        android:layout_alignStart="@+id/changePassword"
+        android:layout_marginTop="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="@color/darkgrey"
+        android:id="@+id/statePersonal"
+        android:textSize="20dp"
+        android:layout_below="@+id/settingImage"
+        android:layout_alignStart="@+id/settingImage"
+        android:layout_alignEnd="@+id/settingImage"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+
+
+</RelativeLayout>

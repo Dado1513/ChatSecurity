@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Localizzazione GPS"
+        android:key="pref_localizzazioneGps">
+        <ListPreference
+            android:key="pref_Gps"
+            android:title="Localizzazione ?"
+            android:summary="Clicca per attivare o disattivare la localizzazione GPS"
+            android:dialogTitle="Localizzazione ?"
+            android:entries="@array/rounding_keys"
+            android:entryValues="@array/rounding_values"
+            android:defaultValue="@string/rounding_default" />
+    </PreferenceCategory>
+</PreferenceScreen>

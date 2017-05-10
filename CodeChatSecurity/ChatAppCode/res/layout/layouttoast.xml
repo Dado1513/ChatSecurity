@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout1"
+    android:background="@drawable/bg_circle"
+
+    >
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView1" android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Benvenuto in Chat Security"
+        android:gravity="center"
+        android:textColor="@android:color/white">
+    </TextView>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:src="@drawable/ic_search_white_24dp"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="5dip"
+        android:id="@+id/imageView1"
+        android:clickable="true">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Clicca sulla lente e cerca i tuoi amici \n Aggiorna i contatti  velocemente  \n Personalizza il tuo profilo  "
+        android:gravity="center"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@android:color/white">
+    </TextView>
+
+</RelativeLayout>

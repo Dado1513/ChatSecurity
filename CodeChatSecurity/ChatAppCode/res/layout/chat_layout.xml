@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:id="@+id/imageViewChat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameUserChat"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="nomeChat"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageViewChat"
+        android:layout_marginStart="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageChat"
+        android:textColor="#888888"
+        android:text="Seems gcm will take some time"
+        android:layout_below="@+id/nameUserChat"
+        android:layout_alignStart="@+id/nameUserChat" />
+
+    <TextView
+        android:id="@+id/timestampChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12:00 AM"
+        android:textSize="10dp"
+        android:layout_below="@+id/messageChat"
+        android:layout_alignStart="@+id/messageChat" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@android:color/white"
+        android:text="5"
+        android:background="@drawable/bg_circle"
+        android:layout_alignTop="@+id/nameUserChat"
+        android:layout_alignEnd="@+id/nameUserChat" />
+
+</RelativeLayout>

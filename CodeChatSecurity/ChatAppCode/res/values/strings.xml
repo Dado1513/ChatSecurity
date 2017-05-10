@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Chat Security</string>
+    <string name="passwordDimenticata"><u>Password Dimenticata</u></string>
+    <string name="titleActivityLogin">LOGIN</string>
+    <string name="titleActivityRegistrati">REGISTRATI</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="buttonRegistrati">Registrati</string>
+    <string name="buttonLogin">Login</string>
+    <string name="actionLogout">Logout</string>
+    <string  name="utenteGiaLoggato">
+        <u>Utente Gia Loggato</u></string>
+
+    <string-array name="rounding_keys">
+        <item >None</item>
+        <item >Tip</item>
+        <item >Total</item>
+    </string-array>
+    <string-array name="rounding_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+    </string-array>
+    <string name="rounding_default">0</string>
+
+</resources>

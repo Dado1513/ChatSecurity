@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="SCEGLI IMMAGINE DI SFONDO PER LE CHAT"
+        android:textSize="18dp"
+        android:id="@+id/textView4ImageChange"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <ImageView
+        android:id="@+id/imgViewSfondo"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/rimuoviImmagineSfondo"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebuttondark"
+        android:text="RIMUOVI IMMAGINE"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/imgViewSfondo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/impostaImmagineSfondoButton"
+        android:background="@drawable/ic_done_all_black_24dp"
+        android:layout_alignBottom="@+id/imgViewSfondo"
+        android:layout_alignEnd="@+id/loadImageSfonfo" />
+
+    <Button
+        android:id="@+id/loadImageSfonfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebuttondark"
+        android:text="CARICA IMMAGINE"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/rimuoviImmagineSfondo"
+        android:layout_alignEnd="@+id/rimuoviImmagineSfondo" />
+
+    <TextView
+        android:text="Opacità"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/seekBar"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/loadImageSfonfo"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="10"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_above="@+id/impostaImmagineSfondoButton"
+        android:layout_alignEnd="@+id/impostaImmagineSfondoButton"
+        android:layout_alignStart="@+id/loadImageSfonfo" />
+
+
+</RelativeLayout>

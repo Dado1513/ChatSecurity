@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityChatRoom">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageBackgroudChatRoom"
+        android:scaleType="centerCrop"
+        android:alpha="0.1"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.ChatRoomActivity"
+
+        tools:showIn="@layout/activity_chat_room">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_viewChatRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:scrollbars="vertical"
+            android:layout_above="@+id/linearLayout"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/recycler_viewChatRoom"
+            android:layout_toStartOf="@+id/btn_send_message"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentEnd="true">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_add_a_photo_white_24dp"
+                android:id="@+id/addPhoto"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/bg_bubble_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/linearLayout"
+            android:layout_toStartOf="@+id/btn_send_message">
+
+
+            <EditText android:id="@+id/messageChatRoom"
+                android:layout_width="match_parent"
+                android:hint="Enter message"
+                android:scrollbars="vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@null"
+                android:minLines="2"
+
+                android:layout_marginRight="10dp"
+
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:inputType="textMultiLine">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_send_message"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_send_white_36dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"/>/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
